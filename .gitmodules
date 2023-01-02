@@ -1,0 +1,6 @@
+[submodule "_builder/useragent_parser"]
+	path = _builder/useragent_parser
+	url = https://github.com/Financial-Times/useragent_parser.git
+[submodule "_builder/polyfill-useragent-normaliser"]
+	path = _builder/polyfill-useragent-normaliser
+	url = https://github.com/Financial-Times/polyfill-useragent-normaliser
