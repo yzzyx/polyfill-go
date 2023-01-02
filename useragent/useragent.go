@@ -12,5 +12,10 @@ type Useragent struct {
 
 // String returns a string representation of a user agent
 func (ua Useragent) String() string {
-	return fmt.Sprintf("%s/%d.%d.%d", ua.Family, ua.Major, ua.Minor, ua.Patch)
+	return ua.Family + "/" + ua.Version()
+}
+
+// Version returns a string representation of the version
+func (ua Useragent) Version() string {
+	return fmt.Sprintf("%d.%d.%d", ua.Major, ua.Minor, ua.Patch)
 }
